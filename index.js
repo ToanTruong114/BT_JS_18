@@ -81,9 +81,11 @@ function ex5(){
         if (arr[i] % 2 === 0){
             document.getElementById("result5").innerHTML = arr[i];
             return;
+        }else {
+            document.getElementById("result5").innerHTML = -1; 
         }
     }
-    document.getElementById("result5").innerHTML = -1; 
+    
 }
 
 // console.log("--------Bài 6--------");
@@ -178,7 +180,7 @@ document.getElementById("result11").innerHTML = arr11;
 
 function ex9(){
 
-    var count3 = "";
+    var count3 = 0;
 
     for (var i = 0; i < arr11.length; i++){
         if (Number.isInteger(arr11[i]) === true){
